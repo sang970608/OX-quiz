@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>OX 퀴즈 결과</title>
+        <link rel="stylesheet" type="text/css" href="result.css" />
+    </head>
+    <body>
+        <div class="head">
+            <div class="headSub">
+                디자이너스 건강퀴즈
+            </div>    
+            <div class="headResult">
+                나의 결과는?
+            </div>
+        </div>
+        <script>
+            const temp = location.href.split("?");
+            data = temp[1].split(":");
+            let correct
+            for (let i=0; i<data.length; i++){
+                if (data[i]==20) correct[i] = true; //정답 체크
+                else correct[i] = false;
+            }
+            score = eval(data[0]) + eval(data[1]) + eval(data[2]) + eval(data[3]) + eval(data[4]);
+            document.write("<p class=score>" + score + "</p><p class=th>점</p>" );
+        </script>
+        <div class="explaneSub">정답 해설</div>
+        <div class="public">
+            <div class="explaneBox">
+                <h2>Q1.</h2>
+                <script>
+                    if (correct[0] == true)
+                        document.write("<div class=correct />");
+                    else
+                        document.write("<div class=incorrect />");
+                </script>
+                <div class="answer">
+                    같은 양의 음식이라면 하루 3번 이상, 최대한 여러번
+                    나눠서 먹는 것이 다이어트에 더 효과적이다.
+                </div>
+                <div class="X">
+                    <div class="X1"></div>
+                    <div class="X2"></div>
+                </div>
+                <div class="explane">
+                    오랫동안 굶거나 불규칙하게 식사를 하면 우리 몸은 비상사태를 선포합니다.
+                    그래서 수천 년 동안 진화를 통해 전해져 내려온 기아 유전자가 작동하면서 체지방을 뱃살이 축적하려는 경향이 생깁니다.
+                    반면 일정한 시간에 규칙적으로 음식을 먹으면 내 몸은 더 이상 불안에 떨지 않고 섭취한 열량을 바로 활동하는데 필요한 에너지로 활용하게 됩니다.
+                    결론은, 하루 3번 정해진 시간에 규칙적으로 식사하는 것이 건강에 좋습니다.
+                </div>
+                <div class="line" />
+            </div>
+            <div class="explaneBox">
+                <h2>Q2.</h2>
+                <div class="answer">
+                    아침 식사를 거르면 오히려 체지방이 더 축적된다.
+                </div>
+                <div class="O"></div>
+                <div class="explane">
+                    아침을 굶게 되면 전날 저녁부터 다음날 점심까지 16~18시간의 공복상태가 이어집니다.
+                    그러면 내 몸은 "내 주인은 너무 게을러, 직장에 가고 공부도 하고 운동을 해야 할 때엔 음식을 주지 않다가 꼭 잠자려고 할때만
+                    음식을 잔뜩 넣어주니 음식이 들어올 때 최대한 저장해두었다가 써야겠어." 라고 생각합니다.
+                    그렇다고 아침을 꼭 배불리 먹으라는 것은 아닙니다. 간단하게 저지방 우유, 시리얼, 통밀 샌드위치, 생두부 등 밤새 공복상태를 깰 수 있는 음식이면 충분합니다.
+                </div>
+                <div class="line" />
+            </div>
+            <div class="explaneBox">
+                <h2>Q3.</h2>
+                <div class="answer">
+                    저녁식사는 무조건 저녁 6~7시 이전에 끝내야 한다.
+                </div>
+                <div class="X">
+                    <div class="X1"></div>
+                    <div class="X2"></div>
+                </div>
+                <div class="explane">
+                    반드시 오후 6시 이후에는 저녁을 먹지 말아야 하는 것은 아닙니다.
+                    만일 직업적으로 밤 12시 이전에 잘 수 없는 사람이 저녁을 너무 일찍 먹게 되면
+                    반드시 야식을 찾게 됩니다. 따라서 저녁을 6시 혹은 7시 이전에 먹어야 한다는 강박관념을
+                    갖기보다 잠자는 시간을 기준으로 적어도 취침하기 4~5시간 이전에 저녁식사를 끝내는 것이 좋습니다.
+                </div>
+                <div class="line" />
+            </div>
+            <div class="explaneBox">
+                <h2>Q4.</h2>
+                <div class="answer">
+                    음식은 최소 20분 이상 천천히 씹어 먹어야 한다.
+                </div>
+                <div class="O"></div>
+                <div class="explane">
+                    우리가 음식을 먹고 나서 느끼는 배부름의 신호는 위장이 아니라 뇌가 느끼는 것입니다.
+                    만일 음식을 너무 빨리 먹으면 배가 부르다는 신호가 뇌에 전달되기 전에 이미 음식은 위장에 쌓이게 됩니다.
+                    따라서 식사를 할 때는 최소 20분 이상 천천히 씹어서 먹는게 좋습니다.
+                </div>
+                <div class="line" />
+            </div>
+            <div class="explaneBox">
+                <h2>Q5.</h2>
+                <div class="answer">
+                    운동과 식욕억제제를 병행하면 다이어트에 큰 도움이 된다.
+                </div>
+                <div class="X">
+                    <div class="X1"></div>
+                    <div class="X2"></div>
+                </div>
+                <div class="explane">
+                    식욕억제제를 사용하면 살은 획기적으로 빠질 수 있습니다.
+                    그러나 살 빼려고 갑상선호르몬제, 간질치료제, 설사유도제를 먹는 것은 매우 어리석은 행동입니다.
+                    자칫하면 살 빼려다 목숨을 잃으르 수도 있습니다. 억지로 몸에 부작용을 감수하면서
+                    살을 빼는 것은 건강에 치명적인 문제를 불러올 수 있습니다.
+                </div>
+                <div class="line" />
+            </div>
+        </div>
+    </body>
+</html>

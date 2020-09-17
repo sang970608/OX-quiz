@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>OX퀴즈</title>
+        <link rel="stylesheet" type="text/css" href="quiz.css" />
+    </head>
+    <body>
+        <div>
+            <div class="subHead">
+            디자이너스 OX퀴즈
+            </div>
+            <div class="mainHead">
+            <span class="o">O</span>
+            <span class="x">X</span>
+            <span class="q">퀴</span>
+            <span class="z">즈</span>
+            </div>
+        </div>           
+        <div class="ques">
+            <div class="quiz">
+                <div>Q1. 같은 양의 음식이라면 하루 3번 이상 최대한 여러번 나눠서 먹는 것이 다이어트에 더 효과적이다.</div> 
+                    <div class="OX">
+                        <label for=ques1O>
+                        <input type="radio" id=ques1O value=0 name="ques1" />
+                        <div class="correct">O</div></label>
+                        <div class="line"></div>
+                        <label for=ques1X>
+                        <input type="radio" id=ques1X value=20 name=ques1 />
+                        <div class="incorrect">X</div></label>
+                </div>
+                <div>Q2. 아침식사를 거르면 오히려 체지방이 더 축적된다.</div> 
+                    <div class="OX">
+                        <label for=ques2O>
+                        <input type="radio" id=ques2O value=20 name="ques2" />
+                        <div class="correct">O</div></label>
+                        <div class="line"></div>
+                        <label for=ques2X>
+                        <input type="radio" id=ques2X value=0 name=ques2 />
+                        <div class="incorrect">X</div></label>
+                </div>
+                <div>Q3. 저녁식사는 무조건 저녁 6~7시 이전에 끝내야 한다.</div> 
+                    <div class="OX">
+                        <label for=ques3O>
+                        <input type="radio" id=ques3O value=0 name="ques3" />
+                        <div class="correct">O</div></label>
+                        <div class="line"></div>
+                        <label for=ques3X>
+                        <input type="radio" id=ques3X value=20 name=ques3 />
+                        <div class="incorrect">X</div></label>
+                </div>
+                <div>Q4. 음식은 최소 20분 이상 천천히 씹어 먹어야 한다.</div> 
+                    <div class="OX">
+                        <label for=ques4O>
+                        <input type="radio" id=ques4O value=20 name="ques4" />
+                        <div class="correct">O</div></label>
+                        <div class="line"></div>
+                        <label for=ques4X>
+                        <input type="radio" id=ques4X value=0 name=ques4 />
+                        <div class="incorrect">X</div></label>
+                </div>
+                <div>Q5. 운동과 식욕억제제를 병행하면 다이어트에 큰 도움이 된다.</div> 
+                    <div class="OX">
+                        <label for=ques5O>
+                        <input type="radio" id=ques5O value=0 name="ques5" />
+                        <div class="correct">O</div></label>
+                        <div class="line"></div>
+                        <label for=ques5X>
+                        <input type="radio" id=ques5X value=20 name=ques5 />
+                        <div class="incorrect">X</div></label>
+                </div>
+            </div>
+        </div>
+        <div className="next">
+            <button class="enter" type="submit" onClick="value_check()"><Link to="/Result">
+            <strong class="enterBtn">결과확인</strong> 
+            <img src="right-arrow.png" alt="Next" title="Next" class="arrow" /></Link></button>
+        </div>
+        <script type="text/javascript" src="quiz.js"></script>
+    </body>
+</html>
