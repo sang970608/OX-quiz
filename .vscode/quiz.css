@@ -82,10 +82,10 @@
     height: 0;
   }
   input:checked + .correct{
-    outline: 3px solid blue;
+    text-shadow: 10px 10px 10px black;
   }
   input:checked + .incorrect{
-    outline: 3px solid red;
+    text-shadow: 10px 10px 10px black;
   }
   .quiz{
     font-weight: bold;
@@ -98,7 +98,6 @@
     color: blue;
     font-weight: bold;
     font-size: 200px;
-    text-shadow: 10px 10px 10px rgb(115, 247, 247);
     cursor: pointer;
   }
   .line{
@@ -113,7 +112,6 @@
     color: red;
     font-weight: bold;
     font-size: 200px;  
-    text-shadow: 10px 10px 10px rgb(252, 145, 163);
     cursor: pointer;
   }
   .footer{

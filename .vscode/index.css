@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #5D6DBE;
+}
+@media only screen and (min-width:769px){
+    .startBody{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+    }
+    .start{
+        height: 100%;
+    }
+    .startBtn{
+        position: absolute;
+        top: 57%;
+        left: 20.5%;
+        width: 35.2%;
+        height: 10.5%;
+        border-radius: 40px;
+        opacity: 0;
+        transform: rotate(5deg);
+        cursor: pointer;
+    }
+}
+@media screen and (max-width:768px){
+    .startBody{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .start{
+        width: 100%;
+    }
+    .startBtn{
+        position: absolute;
+        top: 57%;
+        left: 20.5%;
+        width: 35.2%;
+        height: 10.5%;
+        border-radius: 40px;
+        opacity: 0;
+        transform: rotate(5deg);
+        cursor: pointer;
+    }
+}

@@ -98,3 +98,73 @@ h2{
     left: 6%;
     transform: rotate(-45deg);
 }
+.correct0{
+    position: absolute;
+    left: 50%;
+    top: 11%;
+    transform: translateX(-50%);
+    height: 200px;
+}
+.correct1{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    height: 200px;
+}
+.correct2{
+    position: absolute;
+    left: 50%;
+    top: 49%;
+    transform: translateX(-50%);
+    height: 200px;
+}
+.correct3{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+    height: 200px;
+}
+.correct4{
+    position: absolute;
+    left: 50%;
+    top: 82%;
+    transform: translateX(-50%);
+    height: 200px;
+}
+.wrong0{
+    position: absolute;
+    left: 55%;
+    top: 11%;
+    transform: translateX(-50%);
+    height: 100px;
+}
+.wrong1{
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    transform: translateX(-50%);
+    height: 100px;
+}
+.wrong2{
+    position: absolute;
+    left: 55%;
+    top: 49%;
+    transform: translateX(-50%);
+    height: 100px;
+}
+.wrong3{
+    position: absolute;
+    left: 55%;
+    top: 65%;
+    transform: translateX(-50%);
+    height: 100px;
+}
+.wrong4{
+    position: absolute;
+    left: 55%;
+    top: 82%;
+    transform: translateX(-50%);
+    height: 100px;
+}
